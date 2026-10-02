@@ -4,64 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DER-FUNCHS</title>
+    <style>
+        :root {
+            --bg: rgb(142, 94, 255);
+            --pink: rgb(255, 0, 200);
+            --purple: rgb(48, 0, 91);
+            --dark: rgb(9, 0, 0);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg);
+            font-family: Arial, sans-serif;
+            color: var(--dark);
+        }
+
+        .container {
+            width: min(1200px, 92%);
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: rgb(17, 0, 255);
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--purple);
+            font-size: clamp(1.5rem, 2.6vw, 2.5rem);
+            line-height: 1.4;
+            margin: 0 0 1rem 0;
+        }
+
+        h3 {
+            margin: 0.5rem 0 0;
+        }
+
+        .welcome-box {
+            width: min(900px, 90%);
+            margin: 2rem auto 0;
+            padding: 1.5rem 1rem;
+            background-color: rgba(255, 8, 226, 0.29);
+            border: 5px solid var(--pink);
+            text-align: center;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 2rem;
+            align-items: center;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero img {
+            display: block;
+            width: min(100%, 600px);
+            height: auto;
+            border: 4px solid var(--dark);
+            background: white;
+        }
+
+        .info-list {
+            width: min(1100px, 92%);
+            margin: 0 auto;
+            padding: 1rem 0 2rem;
+        }
+
+        .info-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .info-list td {
+            padding: 0.4rem 0.5rem;
+            vertical-align: top;
+        }
+
+        .divider {
+            height: 5px;
+            border: 0;
+            background-color: rgb(0, 0, 0);
+            margin: 1.5rem 0;
+        }
+
+        @media (max-width: 700px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
-<style>
-h1 {
-  color: rgb(17, 0, 255);
-  font-size: 40px;
-}
-div {
-  width: 320px;
-  height: 60px;
-  padding: 10px;
-  border: 5px solid rgb(9, 0, 0);
-  margin: 0;
-}
-h2 {
-  color: rgb(48, 0, 91);
-  font-size: 40px;
-}
-</style>
-<body style="background-color:rgb(142, 94, 255);">
+<body>
+    <div class="container">
+        <div class="welcome-box">
+            <h1>WELCOME</h1>
+            <h3>this is my website for showing my info and status</h3>
+        </div>
 
-<center>
-    <div style="background-color:rgba(255, 8, 226, 0.29);border: 5px solid rgb(255, 0, 200);">
-    <center>
-    <h1>WELCOME</h1>
-    <h3>this is my website for showing my info and status </h3>
-    </center>
+        <section class="hero">
+            <img src="img/MyRealFursonaHS.png" alt="Mr. Fox portrait">
+
+            <div>
+                <h2>
+                    Hallo! in am Mr.Fox.<br>
+                    I am a random person on the internet!<br>
+                    i made this web for ummm... idk i was bord. Anways i do ham radio (still trying), programming, art, drawing, cybersecurity, chemistry, electronic and more.
+                </h2>
+                <h3>(hlso pls don't ask for art commissions)</h3>
+            </div>
+        </section>
     </div>
-</center>
-<br><br><br><br> 
-<table style="width:100%">
-  <tr>
-    <th><img src="/img/MyRealFursonaHS.png" alt="" style="width:777px;height:777px;margin-right: 100%;"></th>
-    <th style="text-align: left;">
-    <h2>Hallo! in am Mr.Fox. <br>
-    I am a random person on the internet! <br>
-    i made this web for ummm... idk i was bord. Anways i do ham radio(still trying), programming, art, drawing, Cybersecurity, Chemestry, electronic and more.
-    </h2>
-    <h3>(hlso pls don't ask for art commissions)</h3>
-    </th>
-  </tr>
 
-<hr style="height:5px;border-width:0;color:rgb(255, 0, 200);background-color:rgb(0, 0, 0)">
-</table>
-<hr style="height:5px;border-width:0;color:rgb(255, 0, 200);background-color:rgb(0, 0, 0)">
-<table>
-      <tr>
-    <td><h2>idk where the hell are you find me but here my some info.</h2></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><h2>Discord: @foxisthebest268152381</h2></td>
-    <td><h2></h3></td>
-   </tr>
-     <tr>
-    <td><h2>Youtube: @Plutonium_Fox</h2></td>
-    <td><h2></h2></td>
-   </tr>
-</table>
+    <div class="divider"></div>
+    <div class="divider"></div>
+
+    <div class="info-list">
+        <table>
+            <tr>
+                <td>
+                    <h2>idk where the hell are you find me but here my some info.</h2>
+                </td>
+            </tr>
+            <tr>
+                <td><h2>Discord: @foxisthebest268152381</h2></td>
+            </tr>
+            <tr>
+                <td><h2>Youtube: @Plutonium_Fox</h2></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
-
